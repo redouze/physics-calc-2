@@ -6,4 +6,4 @@
 
 ## Вигляд сайту
 
-![Website](./images/website.png)
+![Website](./images/image.png)
