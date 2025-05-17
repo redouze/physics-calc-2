@@ -1,0 +1,39 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Калькулятор валових викидів</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        
+        <div class="calculator-container">
+            <h1>Калькулятор валових викидів шкідливих речовин</h1>
+            <h2>Введіть значення: </h2>
+
+            <label for="coal">Донецьке газове вугілля марки ГР (т)</label>
+            <input type="number" id="coal" placeholder="Введіть донецьке газове вугілля марки ГР (т)">
+            
+            <label for="oil">Високосірчистий мазут марки 40 (т)</label>
+            <input type="number" id="oil" placeholder="Введіть високосірчистий мазут марки 40 (т)">
+            
+            <label for="gas">Природний газ із газопроводу Уренгой-Ужгород (тис. м^3)</label>
+            <input type="number" id="gas" placeholder="Введіть природний газ із газопроводу Уренгой-Ужгород (тис. м^3)">
+            
+            <button id="calculate" onclick="main();">Обчислити</button>
+        </div>
+        
+        <div class="results-container">
+            <h2>Результати</h2>
+            <p>Показник емісії твердих частинок при спалюванні вугілля: <span id="coal-emission"></span></p>
+            <p>Валовий викид при спалюванні вугілля: <span id="coal-combustion"></span></p>
+            <p>Показник емісії твердих частинок при спалюванні мазуту: <span id="oil-emission"></span></p>
+            <p>Валовий викид при спалюванні мазуту: <span id="oil-combustion"></span></p>
+           <p>Показник емісії твердих частинок при спалюванні природного газу: <span id="gas-emission"></span></p>
+            <p>Валовий викид при спалюванні природного газу: <span id="gas-combustion"></span></p>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+    </html>
